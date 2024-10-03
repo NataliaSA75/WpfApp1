@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid x:Name="Window2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="tb_input" HorizontalAlignment="Left" Margin="489,187,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Label x:Name="l_disc" Content="Введите двоичное число не больше 10000: " Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="179,183,0,0" VerticalAlignment="Top"/>
+        <Label Content="" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="197,246,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="bt_getResult" Content="Делится ли оно на 15?" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="391,231,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Label x:Name="bool_l" Content="" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="436,277,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,63,0,0" TextWrapping="Wrap" Text="Число вводится своим двоичным представлением (длина числа не превышает 10000 двоичных разрядов). Необходимо определить, делится ли число на 15." VerticalAlignment="Top" Grid.Column="1" Width="298"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfApp1.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window3" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="257,83,0,0" TextWrapping="Wrap" Text="Найти в массиве все числа, составленные из одних и тех же цифр" VerticalAlignment="Top"/>
+        <Label Content="[1,  1, 22, 77, 2, 22, 3, 34, 64, 90, 4444, 567]" HorizontalAlignment="Left" Margin="322,152,0,0" VerticalAlignment="Top" Height="27" Width="265"/>
+        <TextBlock x:Name="tbl_Otvet" HorizontalAlignment="Left" Margin="400,217,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="154" Width="370"/>
+        <Button x:Name="bt_Otvet" Content="Найти" HorizontalAlignment="Left" Margin="239,217,0,0" VerticalAlignment="Top" Click="bt_Otvet_Click"/>
+
+    </Grid>
+</Window>
